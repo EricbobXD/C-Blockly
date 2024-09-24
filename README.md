@@ -1,2 +1,2 @@
 # C-Blockly
-Blockly but ofr c++
+Blockly but for c++
