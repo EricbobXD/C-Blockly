@@ -161,11 +161,18 @@ Blockly.Cpp['cout_block'] = function(block) {
     return code;
 };
 
-Blockly.Cpp['vector_definition_nosize'] = function(block) {
-    var vector = block.getFieldValue('VECTOR');
-    var type = block.getFieldValue('TYPE');
-    var code = 'vector<' + type + '> ' + vector + ';\n';
-    return code;
+Blockly.Cpp["vector_definition_nosize"] = function (block) {
+    var vector = block.getFieldValue("VECTOR");
+    var type = block.getFieldValue("TYPE");
+    return `vector<${type}>${vector};\n`;
+};
+
+Blockly.Cpp['vector_definition_boolean'] = function(block) {
+    var vector = block.getFieldValue("VECTOR");
+    var type = block.getFieldValue("TYPE");
+    var booleans = block.getFieldValue("booleans");
+    var value = Blockly.Cpp.valueToCode(block, 'VALUE', Blockly.Cpp.ORDER_ASSIGNMENT) || '0'; // 預設值
+    return `vector<${type}>${vector}(${value} , ${booleans});\n`;
 };
 
 Blockly.Cpp['vector_pushback'] = function(block) {
