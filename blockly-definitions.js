@@ -730,15 +730,15 @@ Blockly.defineBlocksWithJsonArray([
         "type": "vector_pushback",
         "message0": "push %1 into vector %2",
         "args0": [
-        {
-            "type": "input_value",
-            "name": "ELEMENT"
-        },
-        {
-            "type": "field_input",
-            "name": "VECTOR",
-            "text": "vector_name"
-        }
+            {
+                "type": "input_value",
+                "name": "ELEMENT"
+            },
+            {
+                "type": "field_input",
+                "name": "VECTOR",
+                "text": "vector_name"
+            }
         ],
         "previousStatement": null,
         "nextStatement": null,
