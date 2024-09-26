@@ -266,7 +266,7 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "定義一個基本的 C++ 函數",
         "helpUrl": ""
     },
-    {//cll function
+    {//call function
         "type": "function_call",
         "message0": "%1",
         "args0": [
