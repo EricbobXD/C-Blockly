@@ -698,7 +698,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     //vector
     {
-        "type" : "definition",
+        "type" : "vector_definition",
         "message" : "define vector %1",
         "args0" : [
             {
@@ -713,7 +713,7 @@ Blockly.defineBlocksWithJsonArray([
         "helpUrl" : "" 
     },
     {
-        "type": "push_back",
+        "type": "vector_popback",
         "message0": "push %1 into vector %2",
         "args0": [
         {
@@ -733,7 +733,7 @@ Blockly.defineBlocksWithJsonArray([
         "helpUrl": ""
     },
     {
-        "type": "pop_back",
+        "type": "vector_popback",
         "message0": "pop last element from vector %1",
         "args0": [
         {
