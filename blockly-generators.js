@@ -165,7 +165,8 @@ Blockly.Cpp['cout_block'] = function(block) {
 Blockly.Cpp['vector_definition'] = function(block) {
     var vector = block.getFieldValue('VECTOR');
     var type = block.getFieldValue('TYPE');
-    return `vector<${type}>${vector}\n`;
+    var code = 'vector<' + type + '>' + vector';\n';
+    return code;
 };
 
 Blockly.Cpp['vector_pushback'] = function(block) {
