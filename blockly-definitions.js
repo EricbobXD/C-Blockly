@@ -702,7 +702,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//vector
         "type" : "vector_definition_nosize",
-        "message" : "define vector data_type : %1 , name : %2",
+        "message0" : "define vector data_type : %1 , name : %2",
         "args0" : [
             {
                 "type": "field_dropdown",
@@ -765,7 +765,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {
         "type" : "vector_definition_boolean",
-        "message" : "define vector data_type : %1 , name : %2 , size : % 3 , boolean = %4",
+        "message0" : "define vector data_type : %1 , name : %2 , size : % 3 , boolean = %4",
         "args0" : [
             {
                 "type": "field_dropdown",
