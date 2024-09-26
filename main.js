@@ -1,19 +1,19 @@
 var workspace = Blockly.inject('blocklyDiv', {
     toolbox: `
         <xml>
+                <category name="標準函式庫" colour="170">
+                    <category name="vector" colour="170">
+                        <block type="push_back"></block>
+                        <block type="pop_back"></block>
+                    </category>
+                </category>
+                
                 <category name="主程式框架" colour="0">
                     <block type="include_bits/stdc++.h">
                         <next>
                             <block type="main_block"></block>
                         </next>
                     </block>
-                </category>
-                
-                <category name="標準函式庫" colour="170">
-                    <category name="vector" colour="170">
-                        <block type="push_back"></block>
-                        <block type="pop_back"></block>
-                    </category>
                 </category>
                 
                 <category name="自定義函式" colour="290">
