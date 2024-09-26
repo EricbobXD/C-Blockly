@@ -380,9 +380,10 @@ Blockly.defineBlocksWithJsonArray([
             "type": "field_dropdown",
             "name": "OPERATOR",
             "options": [
-                ["&", "AND"],
-                ["|", "OR"],
-                ["^", "XOR"]
+                ["^", "XOR"],
+                ["&&", "AND"],
+                ["||", "OR"],
+                ["!", "NOT"]
             ]
             },
             {
@@ -439,34 +440,6 @@ Blockly.defineBlocksWithJsonArray([
         "output": "Boolean",
         "colour": 210,
         "tooltip": "Returns true if the condition is false.",
-        "helpUrl": ""
-    },
-    {//&& || !
-        "type": "logic_or_and_xor",
-        "message0": "%1 %2 %3",
-        "args0": [
-            {
-            "type": "input_value",
-            "name": "A"
-            },
-            {
-            "type": "field_dropdown",
-            "name": "OPERATOR",
-            "options": [
-                ["&&", "AND"],
-                ["||", "OR"],
-                ["!", "NOT"]
-            ]
-            },
-            {
-            "type": "input_value",
-            "name": "B"
-            }
-        ],
-        "output": "Boolean",
-        "colour": 210,
-        "inputsInline": true,
-        "tooltip": "or and xor",
         "helpUrl": ""
     },
     {//math caculacte
@@ -666,83 +639,72 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "使用 printf 輸出格式化的字串",
         "helpUrl": ""
     },
-    //vector
-    {
-        "type" : "push_back",
-        "message" : "push_back(%1)",
-        "args0" : [
-            {
-                "type" : "input_value",
-                "name" : "VALUE"
-            }
-        ]
-    },
     {//number
-                "type": "number",
-                "message0": "number %1",
-                "args0": [
-                    {
-                        "type": "field_number",
-                        "name": "NUMBER",
-                        "value": 0
-                    }
-                ],
-                "output": "Number",
-                "colour": 230,
-                "tooltip": "數字",
-                "helpUrl": ""
-            },
-            {//text
-                "type": "text",
-                "message0": "text %1",
-                "args0": [
-                    {
-                        "type": "field_input",
-                        "name": "TEXT",
-                        "text": "Hellow world"
-                    }
-                ],
-                "output": "String",
-                "colour": 160,
-                "tooltip": "文本",
-                "helpUrl": ""
-            },
+        "type": "number",
+        "message0": "number %1",
+        "args0": [
             {
-              "type": "vector_pushback",
-              "message0": "push %1 into vector %2",
-              "args0": [
-                {
-                  "type": "input_value",
-                  "name": "ELEMENT"
-                },
-                {
-                  "type": "field_input",
-                  "name": "VECTOR",
-                  "text": "vector_name"
-                }
-              ],
-              "previousStatement": null,
-              "nextStatement": null,
-              "colour": 230,
-              "tooltip": "Push an element into a vector",
-              "helpUrl": ""
-            },
-            {
-              "type": "vector_popback",
-              "message0": "pop last element from vector %1",
-              "args0": [
-                {
-                  "type": "field_input",
-                  "name": "VECTOR",
-                  "text": "vector_name"
-                }
-              ],
-              "previousStatement": null,
-              "nextStatement": null,
-              "colour": 230,
-              "tooltip": "Pop the last element from a vector",
-              "helpUrl": ""
+                "type": "field_number",
+                "name": "NUMBER",
+                "value": 0
             }
+        ],
+        "output": "Number",
+        "colour": 230,
+        "tooltip": "數字",
+        "helpUrl": ""
+    },
+    {//text
+        "type": "text",
+        "message0": "text %1",
+        "args0": [
+            {
+                "type": "field_input",
+                "name": "TEXT",
+                "text": "Hellow world"
+            }
+        ],
+        "output": "String",
+        "colour": 160,
+        "tooltip": "文本",
+        "helpUrl": ""
+    },
+    {//vector pushback
+        "type": "vector_pushback",
+        "message0": "push %1 into vector %2",
+        "args0": [
+        {
+            "type": "input_value",
+            "name": "ELEMENT"
+        },
+        {
+            "type": "field_input",
+            "name": "VECTOR",
+            "text": "vector_name"
+        }
+        ],
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": 230,
+        "tooltip": "Push an element into a vector",
+        "helpUrl": ""
+    },
+    {//vector popback
+        "type": "vector_popback",
+        "message0": "pop last element from vector %1",
+        "args0": [
+        {
+            "type": "field_input",
+            "name": "VECTOR",
+            "text": "vector_name"
+        }
+        ],
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": 230,
+        "tooltip": "Pop the last element from a vector",
+        "helpUrl": ""
+    }
 
 ]);
 
