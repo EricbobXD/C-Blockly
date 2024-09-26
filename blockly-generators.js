@@ -160,6 +160,19 @@ Blockly.Cpp['vector'] = function(block) {
     
 }
 
+Blockly.Cpp['vector_pushback'] = function(block) {
+  var element = Blockly.Cpp.valueToCode(block, 'ELEMENT', Blockly.Cpp.ORDER_ATOMIC);
+  var vector = block.getFieldValue('VECTOR');
+  var code = vector + '.push_back(' + element + ');\n';
+  return code;
+};
+
+Blockly.Cpp['vector_popback'] = function(block) {
+  var vector = block.getFieldValue('VECTOR');
+  var code = vector + '.pop_back();\n';
+  return code;
+};
+
 function saveWorkspaceAsXML() {
     var xml = Blockly.Xml.workspaceToDom(workspace);
     var xmlText = Blockly.Xml.domToPrettyText(xml);
