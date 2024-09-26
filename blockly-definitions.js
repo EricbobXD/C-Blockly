@@ -763,6 +763,43 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "Pop the last element from a vector",
         "helpUrl": ""
     },
+    {
+        "type" : "vector_definition_boolean",
+        "message" : "define vector data_type : %1 , name : %2 , size : % 3 , boolean = %4",
+        "args0" : [
+            {
+                "type": "field_dropdown",
+                "name": "TYPE",
+                "options": [
+                    ["int", "int"],
+                    ["float", "float"],
+                    ["double", "double"],
+                    ["char", "char"],
+                    ["string", "std::string"]
+                ]
+            },
+            {
+                "type": "field_input",
+                "name": "VECTOR",
+                "text" : "vector_name"
+            },
+            {
+                "type": "input_value",
+                "name": "VALUE"
+            },
+            {
+                "type" : "field_dropdown",
+                "name" : "booleans",
+                "options" : [
+                    ["true" , "true"],
+                    ["false" , "false"]
+                ]
+            }
+        ],
+        "color" : 230,
+        "tooltip": "vector like list",
+        "helpUrl" : "" 
+    },
     {//using namespace std
       "type": "using_namespace_std",
       "message0": "using namespace std;",
