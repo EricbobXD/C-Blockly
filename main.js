@@ -45,8 +45,8 @@ var workspace = Blockly.inject('blocklyDiv', {
 
                 <category name="邏輯運算子" colour="210">
                     <block type="logic_operators"></block>
-                    <block type="logic_not"></block>
                     <block type="or_and_xor"></block>
+                    <block type="logic_not"></block>
                 </category>
 
                 <category name="數學與運算" colour="230">
