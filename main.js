@@ -12,12 +12,10 @@ var workspace = Blockly.inject('blocklyDiv', {
                 <category name="主程式框架" colour="0">
                     <block type="include_bits/stdc++.h">
                         <next>
-                            <block type="using_namespace_std"></block>
-                        </next>
-                        <next>
                             <block type="main_block"></block>
                         </next>
                     </block>
+                    <block type="using_namespace_std"></block>
                 </category>
                 
                 <category name="自定義函式" colour="290">
