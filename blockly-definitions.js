@@ -721,7 +721,8 @@ Blockly.defineBlocksWithJsonArray([
                 "text" : "vector_name"
             }
         ],
-        "output" : "String",
+        "previousStatement": null,
+        "nextStatement": null,
         "color" : 230,
         "tooltip": "vector like list",
         "helpUrl" : "" 
