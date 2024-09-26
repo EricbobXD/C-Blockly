@@ -161,7 +161,7 @@ Blockly.Cpp['cout_block'] = function(block) {
     return code;
 };
 
-Blockly.Cpp['vector_definition'] = function(block) {
+Blockly.Cpp['vector_definition_nosize'] = function(block) {
     var vector = block.getFieldValue('VECTOR');
     var type = block.getFieldValue('TYPE');
     var code = 'vector<' + type + '> ' + vector + ';\n';
