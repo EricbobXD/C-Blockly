@@ -713,7 +713,7 @@ Blockly.defineBlocksWithJsonArray([
         "helpUrl" : "" 
     },
     {
-        "type": "vector_popback",
+        "type": "vector_pushback",
         "message0": "push %1 into vector %2",
         "args0": [
         {
