@@ -34,6 +34,11 @@ Blockly.cpp['include_bits/stdc++.h'] = function(block) {
     return '#include <bits/stdc++.h>\n';
 };
 
+Blockly.Cpp['using_namespace_std'] = function(block) {
+  var code = 'using namespace std;\n';
+  return code;
+};
+
 Blockly.Cpp['variable_declaration'] = function(block) {
     var type = block.getFieldValue('TYPE');
     var varName = Blockly.Cpp.variableDB_.getName(block.getFieldValue('VAR_NAME'), Blockly.Variables.NAME_TYPE);
