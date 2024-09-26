@@ -749,6 +749,13 @@ Blockly.defineBlocksWithJsonArray([
         "helpUrl": ""
     },
     {
-        
-    },
+      "type": "using_namespace_std",
+      "message0": "using namespace std;",
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": 230,
+      "tooltip": "Use the standard namespace",
+      "helpUrl": ""
+    }
+
 ]);
