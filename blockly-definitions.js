@@ -698,7 +698,6 @@ Blockly.defineBlocksWithJsonArray([
     },
     //vector
     {
-         {
         "type" : "vector_definition",
         "message" : "define vector data_type : %1 , name : %2",
         "args0" : [
