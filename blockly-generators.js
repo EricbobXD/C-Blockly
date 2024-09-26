@@ -164,15 +164,15 @@ Blockly.Cpp['cout_block'] = function(block) {
 Blockly.Cpp["vector_definition_nosize"] = function (block) {
     var vector = block.getFieldValue("VECTOR");
     var type = block.getFieldValue("TYPE");
-    return `vector<${type}>${vector};\n`;
+    return `std::vector<${type}> ${vector};\n`;
 };
 
 Blockly.Cpp['vector_definition_boolean'] = function(block) {
     var vector = block.getFieldValue("VECTOR");
     var type = block.getFieldValue("TYPE");
-    var booleans = block.getFieldValue("booleans");
-    var value = Blockly.Cpp.valueToCode(block, 'VALUE', Blockly.Cpp.ORDER_ASSIGNMENT) || '0'; // 預設值
-    return `vector<${type}>${vector}(${value} , ${booleans});\n`;
+    var booleans = block.getFieldValue("booleans") === 'TRUE' ? 'true' : 'false'; // Ensure booleans are true/false
+    var value = Blockly.Cpp.valueToCode(block, 'VALUE', Blockly.Cpp.ORDER_ASSIGNMENT) || '0'; // Default size
+    return `std::vector<${type}> ${vector}(${value}, ${booleans});\n`;
 };
 
 Blockly.Cpp['vector_pushback'] = function(block) {
