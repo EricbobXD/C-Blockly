@@ -698,9 +698,21 @@ Blockly.defineBlocksWithJsonArray([
     },
     //vector
     {
+         {
         "type" : "vector_definition",
-        "message" : "define vector %1",
+        "message" : "define vector data_type : %1 , name : %2",
         "args0" : [
+            {
+                "type": "field_dropdown",
+                "name": "TYPE",
+                "options": [
+                    ["int", "int"],
+                    ["float", "float"],
+                    ["double", "double"],
+                    ["char", "char"],
+                    ["string", "std::string"]
+                ]
+            },
             {
                 "type": "field_input",
                 "name": "VECTOR",
