@@ -3,8 +3,9 @@ var workspace = Blockly.inject('blocklyDiv', {
         <xml>
                 <category name="標準函式庫" colour="5">
                     <category name="vector" colour="230">
-                        <block type="vector_pushback"></block>
-                        <block type="vector_popback"></block>
+                        <block type="definition"></block>
+                        <block type="push_back"></block>
+                        <block type="pop_back"></block>
                     </category>
                 </category>
                 
