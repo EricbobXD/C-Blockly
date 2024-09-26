@@ -166,7 +166,7 @@ Blockly.Cpp['vector_definition'] = function(block) {
     var vector = block.getFieldValue('VECTOR');
     var type = block.getFieldValue('TYPE');
     return `vector<${type}>${vector}`;
-}
+};
 
 Blockly.Cpp['vector_pushback'] = function(block) {
   var element = Blockly.Cpp.valueToCode(block, 'ELEMENT', Blockly.Cpp.ORDER_ATOMIC);
