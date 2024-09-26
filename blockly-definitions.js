@@ -645,7 +645,8 @@ Blockly.defineBlocksWithJsonArray([
                 "name": "VARIABLE"
             }
         ],
-        "output": "null",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 120,
         "tooltip": "使用 scanf 讀取輸入",
         "helpUrl": ""
@@ -663,7 +664,8 @@ Blockly.defineBlocksWithJsonArray([
                 "name": "VARIABLE"
             }
         ],
-        "output": "null",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 120,
         "tooltip": "使用 printf 輸出格式化的字串",
         "helpUrl": ""
@@ -698,8 +700,7 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "文本",
         "helpUrl": ""
     },
-    //vector
-    {
+    {//vector
         "type" : "vector_definition",
         "message" : "define vector data_type : %1 , name : %2",
         "args0" : [
@@ -725,7 +726,7 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "vector like list",
         "helpUrl" : "" 
     },
-    {
+    {//vector pushback
         "type": "vector_pushback",
         "message0": "push %1 into vector %2",
         "args0": [
@@ -745,7 +746,7 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "Push an element into a vector",
         "helpUrl": ""
     },
-    {
+    {//vector popback
         "type": "vector_popback",
         "message0": "pop last element from vector %1",
         "args0": [
@@ -761,7 +762,7 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "Pop the last element from a vector",
         "helpUrl": ""
     },
-    {
+    {//using namespace std
       "type": "using_namespace_std",
       "message0": "using namespace std;",
       "previousStatement": null,
