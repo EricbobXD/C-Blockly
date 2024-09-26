@@ -10,7 +10,8 @@ Blockly.defineBlocksWithJsonArray([
             }
         ],
         "inputsInline": true,
-        "output": "Void",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 120,
         "tooltip": "Inputs multiple values from the console.",
         "helpUrl": ""
@@ -34,7 +35,8 @@ Blockly.defineBlocksWithJsonArray([
             }
         ],
         "inputsInline": true,
-        "output": "Void",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 120,
         "tooltip": "Outputs value to the console.",
         "helpUrl": ""
