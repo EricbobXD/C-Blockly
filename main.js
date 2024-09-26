@@ -15,7 +15,7 @@ var workspace = Blockly.inject('blocklyDiv', {
                             <block type="main_block"></block>
                         </next>
                     </block>
-                    <block type="using_namespace_std"></block>
+                    
                 </category>
                 
                 <category name="自定義函式" colour="290">
@@ -90,6 +90,7 @@ var workspace = Blockly.inject('blocklyDiv', {
                 <sep></sep>
                 
                 <category name="測試 Block" colour="290">
+                    <block type="using_namespace_std"></block>
                 </category>
         </xml>
     `
