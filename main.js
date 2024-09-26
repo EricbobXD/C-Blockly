@@ -84,12 +84,13 @@ var workspace = Blockly.inject('blocklyDiv', {
                     <block type="return_block"></block>
                 </category>
 
-                <sep></sep>
                 <category name="文本操作" colour="160">
                     <block type="text"></block>
                     <block type="comment_block"></block>
                 </category>
-
+                
+                <sep></sep>
+                
                 <category name="測試 Block" colour="290">
                 </category>
         </xml>
