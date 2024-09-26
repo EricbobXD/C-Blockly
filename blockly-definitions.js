@@ -701,7 +701,7 @@ Blockly.defineBlocksWithJsonArray([
         "helpUrl": ""
     },
     {//vector
-        "type" : "vector_definition",
+        "type" : "vector_definition_nosize",
         "message" : "define vector data_type : %1 , name : %2",
         "args0" : [
             {
