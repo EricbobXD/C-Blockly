@@ -6,6 +6,7 @@ var workspace = Blockly.inject('blocklyDiv', {
                         <block type="vector_definition_nosize"></block>
                         <block type="vector_pushback"></block>
                         <block type="vector_popback"></block>
+                        <block type="vector_definition_boolean></block>
                     </category>
                 </category>
                 
