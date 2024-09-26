@@ -706,6 +706,43 @@ Blockly.defineBlocksWithJsonArray([
                 "colour": 160,
                 "tooltip": "文本",
                 "helpUrl": ""
+            },
+            {
+              "type": "vector_pushback",
+              "message0": "push %1 into vector %2",
+              "args0": [
+                {
+                  "type": "input_value",
+                  "name": "ELEMENT"
+                },
+                {
+                  "type": "field_input",
+                  "name": "VECTOR",
+                  "text": "vector_name"
+                }
+              ],
+              "previousStatement": null,
+              "nextStatement": null,
+              "colour": 230,
+              "tooltip": "Push an element into a vector",
+              "helpUrl": ""
+            },
+            {
+              "type": "vector_popback",
+              "message0": "pop last element from vector %1",
+              "args0": [
+                {
+                  "type": "field_input",
+                  "name": "VECTOR",
+                  "text": "vector_name"
+                }
+              ],
+              "previousStatement": null,
+              "nextStatement": null,
+              "colour": 230,
+              "tooltip": "Pop the last element from a vector",
+              "helpUrl": ""
             }
+
 ]);
 
