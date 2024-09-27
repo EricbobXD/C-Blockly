@@ -123,7 +123,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//int main()
         "type": "main_block",
-        "message0": "int main() %1 %2 return %3",
+        "message0": "int main() %1 %2 return 0;",
         "args0": [
         {
             "type": "input_dummy"
@@ -131,12 +131,6 @@ Blockly.defineBlocksWithJsonArray([
         {
             "type": "input_statement",
             "name": "DO"
-        },
-        {
-            "type": "input_value",
-            "name": "RETURN_VALUE",
-            "check": "Number",
-            "default": "0"
         }
         ],
         "colour": 120,
