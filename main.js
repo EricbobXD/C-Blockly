@@ -19,7 +19,11 @@ var workspace = Blockly.inject('blocklyDiv', {
                 </category>
                 
                 <category name="自定義函式" colour="290">
-                    <block type="basic_function_definition"></block>
+                    <block type="basic_function_definition">
+                        <statement name="DO">
+                            <block type="return_block"></block>
+                        </statement>
+                    </block>
                     <block type="function_call"></block>
                 </category>
                 <sep></sep>
