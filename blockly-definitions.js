@@ -370,7 +370,7 @@ Blockly.defineBlocksWithJsonArray([
         "tooltip": "Include all",
         "helpUrl": ""
     },
-    {//& | ^
+    {//& | ^ Not
         "type": "or_and_xor",
         "message0": "%1 %2 %3",
         "args0": [
@@ -382,9 +382,10 @@ Blockly.defineBlocksWithJsonArray([
             "type": "field_dropdown",
             "name": "OPERATOR",
             "options": [
-                ["&", "AND"],
-                ["|", "OR"],
-                ["^", "XOR"]
+                ["&&", "AND"],
+                ["||", "OR"],
+                ["^", "XOR"],
+                ["!", "NOT"]
             ]
             },
             {
@@ -441,34 +442,6 @@ Blockly.defineBlocksWithJsonArray([
         "output": "Boolean",
         "colour": 210,
         "tooltip": "Returns true if the condition is false.",
-        "helpUrl": ""
-    },
-    {//&& || !
-        "type": "logic_or_and_xor",
-        "message0": "%1 %2 %3",
-        "args0": [
-            {
-            "type": "input_value",
-            "name": "A"
-            },
-            {
-            "type": "field_dropdown",
-            "name": "OPERATOR",
-            "options": [
-                ["&&", "AND"],
-                ["||", "OR"],
-                ["!", "NOT"]
-            ]
-            },
-            {
-            "type": "input_value",
-            "name": "B"
-            }
-        ],
-        "output": "Boolean",
-        "colour": 210,
-        "inputsInline": true,
-        "tooltip": "or and xor",
         "helpUrl": ""
     },
     {//math caculacte
@@ -599,7 +572,8 @@ Blockly.defineBlocksWithJsonArray([
             "name": "VALUE"
             }
         ],
-        "output": "null",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 160,
         "tooltip": "禁用同步以提高輸入輸出效率",
         "helpUrl": ""
@@ -613,7 +587,8 @@ Blockly.defineBlocksWithJsonArray([
             "name": "VALUE"
             }
         ],
-        "output": "null",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 160,
         "tooltip": "解除 cin 和 cout 的綁定",
         "helpUrl": ""
@@ -627,7 +602,8 @@ Blockly.defineBlocksWithJsonArray([
             "name": "VALUE"
             }
         ],
-        "output": "null",
+        "previousStatement": null,
+        "nextStatement": null,
         "colour": 160,
         "tooltip": "解除 cout 和 cin 的綁定",
         "helpUrl": ""
