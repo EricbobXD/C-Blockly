@@ -161,6 +161,16 @@ Blockly.Cpp['cout_block'] = function(block) {
     return code;
 };
 
+Blockly.Cpp['and_or_xor_bool'] = function(block) {
+    var operator = block.getFieldValue('OPERATOR');
+    var valueA = Blockly.Cpp.valueToCode(block, 'A', Blockly.Cpp.ORDER_ATOMIC);
+    var valueB = Blockly.Cpp.valueToCode(block, 'B', Blockly.Cpp.ORDER_ATOMIC);
+    
+    // Ensure both values are present
+    var code = '(' + valueA + ' ' + operator + ' ' + valueB + ')';
+    return [code, Blockly.Cpp.ORDER_ATOMIC];
+};
+
 Blockly.Cpp["vector_definition_nosize"] = function (block) {
     var vector = block.getFieldValue("VECTOR");
     var type = block.getFieldValue("TYPE");
