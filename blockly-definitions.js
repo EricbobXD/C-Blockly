@@ -559,13 +559,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//ios sync
         "type": "boost_ios_sync",
-        "message0": "ios::sync_with_stdio(0); %1",
-        "args0": [
-            {
-            "type": "input_value",
-            "name": "VALUE"
-            }
-        ],
+        "message0": "ios::sync_with_stdio(0);",
         "previousStatement": null,
         "nextStatement": null,
         "colour": 160,
@@ -574,13 +568,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//cin tie
         "type": "boost_cin_tie",
-        "message0": "cin.tie(0); %1",
-        "args0": [
-            {
-            "type": "input_value",
-            "name": "VALUE"
-            }
-        ],
+        "message0": "cin.tie(0);",
         "previousStatement": null,
         "nextStatement": null,
         "colour": 160,
@@ -589,13 +577,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//cout tie
         "type": "boost_cout_tie",
-        "message0": "cout.tie(0); %1",
-        "args0": [
-            {
-            "type": "input_value",
-            "name": "VALUE"
-            }
-        ],
+        "message0": "cout.tie(0);",
         "previousStatement": null,
         "nextStatement": null,
         "colour": 160,
