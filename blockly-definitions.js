@@ -268,12 +268,16 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//cll function
         "type": "function_call",
-        "message0": "%1",
+        "message0": "%1 %2",
         "args0": [
         {
             "type": "field_variable",
             "name": "FUNC_NAME",
             "variable": "myFunction"
+        },
+        {
+            "type": "input_value",
+            "name": "VALUE"
         }
         ],
         "colour": 290,
