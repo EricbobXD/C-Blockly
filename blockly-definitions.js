@@ -228,13 +228,8 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//def function
         "type": "basic_function_definition",
-        "message0": "function %1 %2 %3 %4 %5",
+        "message0": "function %1 %2 %3 %4 %5 %6",
         "args0": [
-        {
-            "type": "field_variable",
-            "name": "FUNC_NAME",
-            "variable": "myFunction"
-        },
         {
             "type": "field_dropdown",
             "name": "RETURN_TYPE",
@@ -246,6 +241,15 @@ Blockly.defineBlocksWithJsonArray([
             ["char", "char"],
             ["string", "std::string"]
             ]
+        },
+        {
+            "type": "field_variable",
+            "name": "FUNC_NAME",
+            "variable": "myFunction"
+        },
+        {
+            "type": "input_value",
+            "name": "VALUE"
         },
         {
             "type": "input_dummy"
