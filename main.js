@@ -66,14 +66,14 @@ var workspace = Blockly.inject('blocklyDiv', {
                             <block type="default_block">
                                 <statement name="DO">
                                     <block type="break_block"></block>
-                                </staement>
+                                </statement>
                             </block>
-                        </staement>
+                        </statement>
                     </block>
                     <block type="case_block">
                         <statement name="DO">
                             <block type="break_block"></block>
-                        </staement>
+                        </statement>
                     </block>
                     <block type="for_block"></block>
                     <block type="while_block"></block>
