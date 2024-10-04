@@ -733,7 +733,11 @@ Blockly.defineBlocksWithJsonArray([
                     ["float", "float"],
                     ["double", "double"],
                     ["char", "char"],
-                    ["string", "std::string"]
+                    ["string", "std::string"],
+                    ["long", "long"],
+                    ["long long", "long long"],
+                    ["unsigned long", "unsigned long"],
+                    ["unsigned long long", "unsigned long long"]
                 ]
             },
             {
