@@ -302,8 +302,19 @@ Blockly.defineBlocksWithJsonArray([
     },
     {//def variable
         "type": "variable_declaration",
-        "message0": "declare %1 %2 = %3",
+        "message0": "declare %1 %2 %3 = %4",
         "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "TYPE",
+            "options": [
+            ["", ""],
+            ["long", "long"],
+            ["long long", "long long"],
+            ["unsigned long", "unsigned long"],
+            ["unsigned long long", "unsigned long long"]
+            ]
+        },
         {
             "type": "field_dropdown",
             "name": "TYPE",
@@ -312,11 +323,7 @@ Blockly.defineBlocksWithJsonArray([
             ["float", "float"],
             ["double", "double"],
             ["char", "char"],
-            ["string", "std::string"],
-            ["long", "long"],
-            ["long long", "long long"],
-            ["unsigned long", "unsigned long"],
-            ["unsigned long long", "unsigned long long"]
+            ["string", "std::string"]
             ]
         },
         {
