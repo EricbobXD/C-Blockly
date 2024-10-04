@@ -198,7 +198,6 @@ Blockly.defineBlocksWithJsonArray([
         "message0": "break",
         "colour": 260,
         "previousStatement": null,
-        "nextStatement": null,
         "tooltip": "退出當前的循環或 switch 語句",
         "helpUrl": ""
     },
@@ -207,7 +206,6 @@ Blockly.defineBlocksWithJsonArray([
         "message0": "continue",
         "colour": 260,
         "previousStatement": null,
-        "nextStatement": null,
         "tooltip": "跳過當前迴圈的剩餘部分，直接進入下一次迴圈",
         "helpUrl": ""
     },
