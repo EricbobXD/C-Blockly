@@ -42,7 +42,7 @@
 .workspace-controls-container {
     display: flex;
     flex-direction: row;
-    height: 130%;
+    height: 125%;
 }
 
 #blocklyDiv {
