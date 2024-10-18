@@ -5,7 +5,7 @@
 }
 
 .workspace-controls-container {
-    display: flex;
+    display: 100%;
     flex-direction: row;
     height: 100%;
 }
