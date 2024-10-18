@@ -1,3 +1,13 @@
+import * as Blockly from 'blockly';
+import {FieldSlider} from '@blockly/field-slider';
+Blockly.Blocks['test_field_slider'] = {
+  init: function () {
+    this.appendDummyInput()
+      .appendField('slider: ')
+      .appendField(new FieldSlider(50), 'FIELDNAME');
+  }
+};
+
 Blockly.Cpp['number'] = function(block) {
     var number = block.getFieldValue('NUMBER');
     return [number, Blockly.Cpp.ORDER_ATOMIC];
