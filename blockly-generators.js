@@ -35,8 +35,8 @@ Blockly.cpp['include_bits/stdc++.h'] = function(block) {
 };
 
 Blockly.Cpp['using_namespace_std'] = function(block) {
-  var code = 'using namespace std;\n';
-  return code;
+    var code = 'using namespace std;\n';
+    return code;
 };
 
 Blockly.Cpp['variable_declaration'] = function(block) {
@@ -165,13 +165,13 @@ Blockly.Cpp['and_or_xor_bool'] = function(block) {
     var operator = block.getFieldValue('OPERATOR');
     var valueA = Blockly.Cpp.valueToCode(block, 'A', Blockly.Cpp.ORDER_ATOMIC);
     var valueB = Blockly.Cpp.valueToCode(block, 'B', Blockly.Cpp.ORDER_ATOMIC);
-    
+
     // Ensure both values are present
     var code = '(' + valueA + ' ' + operator + ' ' + valueB + ')';
     return [code, Blockly.Cpp.ORDER_ATOMIC];
 };
 
-Blockly.Cpp["vector_definition_nosize"] = function (block) {
+Blockly.Cpp["vector_definition_nosize"] = function(block) {
     var vector = block.getFieldValue("VECTOR");
     var type = block.getFieldValue("TYPE");
     return `std::vector<${type}> ${vector};\n`;
@@ -186,22 +186,24 @@ Blockly.Cpp['vector_definition_boolean'] = function(block) {
 };
 
 Blockly.Cpp['vector_pushback'] = function(block) {
-  var element = Blockly.Cpp.valueToCode(block, 'ELEMENT', Blockly.Cpp.ORDER_ATOMIC);
-  var vector = block.getFieldValue('VECTOR');
-  var code = vector + '.push_back(' + element + ');\n';
-  return code;
+    var element = Blockly.Cpp.valueToCode(block, 'ELEMENT', Blockly.Cpp.ORDER_ATOMIC);
+    var vector = block.getFieldValue('VECTOR');
+    var code = vector + '.push_back(' + element + ');\n';
+    return code;
 };
 
 Blockly.Cpp['vector_popback'] = function(block) {
-  var vector = block.getFieldValue('VECTOR');
-  var code = vector + '.pop_back();\n';
-  return code;
+    var vector = block.getFieldValue('VECTOR');
+    var code = vector + '.pop_back();\n';
+    return code;
 };
 
 function saveWorkspaceAsXML() {
     var xml = Blockly.Xml.workspaceToDom(workspace);
     var xmlText = Blockly.Xml.domToPrettyText(xml);
-    var blob = new Blob([xmlText], { type: 'text/xml' });
+    var blob = new Blob([xmlText], {
+        type: 'text/xml'
+    });
     var link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     link.download = 'workspace.xml';
@@ -223,7 +225,9 @@ function handleXMLUpload(event) {
 
 function saveCodeAsCPP() {
     var code = Blockly.Cpp.workspaceToCode(workspace);
-    var blob = new Blob([code], {type: "text/plain"});
+    var blob = new Blob([code], {
+        type: "text/plain"
+    });
     var link = document.createElement("a");
     link.href = window.URL.createObjectURL(blob);
     link.download = "code.cpp";
