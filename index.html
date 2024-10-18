@@ -21,11 +21,11 @@
             <div class="workspace-controls-container">
                 <div id="blocklyDiv" class="dialogue-box"></div>
                 <div id="controls">
-                    <button class="button-java" onclick="saveWorkspaceAsXML()">Download XML</button>
-                    <label for="uploadXML">Upload a file [XML (.xml)]:</label>
+                    <button class="button-java" onclick="saveWorkspaceAsXML()">Download .xml</button>
+                    <label for="uploadXML">Upload .xml file:</label>
                     <input class="input-text" type="file" id="uploadXML" accept=".xml" onchange="handleXMLUpload(event)">
-                    <button class="button-java" onclick="saveCodeAsCPP()">Download C++</button>
-                    <label for="uploadCPP">Upload a file [C++ (.cpp)]:</label>
+                    <button class="button-java" onclick="saveCodeAsCPP()">Download .cpp</button>
+                    <label for="uploadCPP">Upload .cpp file:</label>
                     <input class="input-text" type="file" id="uploadCPP" accept=".cpp" onchange="loadCodeFromCPP(event)">
                 </div>
             </div>
@@ -35,29 +35,6 @@
     <div id="BlankPage" class="tab-content">
         
     </div>
-
-    <script>
-        function openTab(evt, tabName) {
-            // Hide all tab contents
-            var i, tabContent, tablinks;
-            tabContent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = "none";
-                tabContent[i].classList.remove("active");
-            }
-
-            // Remove the 'active' class from all tab buttons
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the clicked tab and mark the button as active
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-            document.getElementById(tabName).classList.add("active");
-        }
-    </script>
 
     <script src="main.js"></script>
     <script src="blockly-definitions.js"></script>
