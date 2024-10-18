@@ -39,11 +39,6 @@ var myTheme = Blockly.Theme.defineTheme('myTheme', {
 });
 
 var workspace = Blockly.inject('blocklyDiv', {
-  toolbox: document.getElementById('toolbox'),
-  theme: myTheme  // 應用自定義主題
-});
-
-var workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
     theme: myTheme
         `
