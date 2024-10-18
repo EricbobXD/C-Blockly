@@ -56,21 +56,19 @@
         <div id="main" class="tab-content active">
             <div class="workspace-controls-container">
                 <div id="blocklyDiv" class="dialogue-box"></div>
-                <div id="controls">
-                    <button class="button-java" onclick="saveWorkspaceAsXML()">Download XML</button>
-                    <label for="uploadXML">Upload a file [XML (.xml)]:</label>
-                    <input class="input-text" type="file" id="uploadXML" accept=".xml" onchange="handleXMLUpload(event)">
-                    <button class="button-java" onclick="saveCodeAsCPP()">Download C++</button>
-                    <label for="uploadCPP">Upload a file [C++ (.cpp)]:</label>
-                    <input class="input-text" type="file" id="uploadCPP" accept=".cpp" onchange="loadCodeFromCPP(event)">
-                </div>
             </div>
         </div>
     </div>
 
     <div id="BlankPage" class="tab-content">
-        <h2>Something is missing...</h2>
-        <p>Here's nothing...</p>
+        <div id="controls">
+            <button class="button-java" onclick="saveWorkspaceAsXML()">Download XML</button>
+            <label for="uploadXML">Upload a file [XML (.xml)]:</label>
+            <input class="input-text" type="file" id="uploadXML" accept=".xml" onchange="handleXMLUpload(event)">
+            <button class="button-java" onclick="saveCodeAsCPP()">Download C++</button>
+            <label for="uploadCPP">Upload a file [C++ (.cpp)]:</label>
+            <input class="input-text" type="file" id="uploadCPP" accept=".cpp" onchange="loadCodeFromCPP(event)">
+        </div>
     </div>
 
     <script>
