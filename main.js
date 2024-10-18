@@ -63,11 +63,18 @@ var workspace = Blockly.inject('blocklyDiv', {
                     <block type="controls_if"></block>
                     <block type="switch_block">
                         <statement name="DO">
-                            <block type="default_block">
+                          <block type="case_block">
+                            <statement name="DO">
+                              <block type="break_block"></block>
+                            </statement>
+                            <next>
+                              <block type="default_block">
                                 <statement name="DO">
-                                    <block type="break_block"></block>
+                                  <block type="break_block"></block>
                                 </statement>
-                            </block>
+                                  </block>
+                                </next>
+                           </block>
                         </statement>
                     </block>
                     <block type="case_block">
