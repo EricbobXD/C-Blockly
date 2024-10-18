@@ -90,7 +90,6 @@ var workspace = Blockly.inject('blocklyDiv', {
                 <sep></sep>
                 
                 <category name="測試 Block" colour="290">
-                    <block type="test_field_slider"></block>
                 </category>
         </xml>
     `
