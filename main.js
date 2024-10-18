@@ -1,15 +1,3 @@
-import * as Blockly from 'blockly';
-import {ZoomToFitControl} from '@blockly/zoom-to-fit';
-
-// Inject Blockly.
-const workspace = Blockly.inject('blocklyDiv', {
-  toolbox: toolboxCategories,
-});
-
-// Initialize plugin.
-const zoomToFit = new ZoomToFitControl(workspace);
-zoomToFit.init();
-
 function openTab(evt, tabName) {
     // Hide all tab contents
     var i, tabContent, tablinks;
