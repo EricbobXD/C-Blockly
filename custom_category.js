@@ -1,8 +1,9 @@
 class CustomCategory extends Blockly.ToolboxCategory {
-  /**
-   * Constructor for a custom category.
-   * @override
-   */
+   /* Constructor for a custom category.
+   /** @override */
+  addColourBorder_(colour){
+    this.rowDiv_.style.backgroundColor = colour;
+  }
   constructor(categoryDef, toolbox, opt_parent) {
     super(categoryDef, toolbox, opt_parent);
   }
