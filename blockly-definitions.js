@@ -1,18 +1,5 @@
-import * as Blockly from 'blockly';
-import '@blockly/field-slider';
 Blockly.defineBlocksWithJsonArray(
     [
-        {
-            type: 'test_field_slider',
-            message0: 'slider: %1',
-            args0: [
-              {
-                type: 'field_slider',
-                name: 'FIELDNAME',
-                value: 50
-              }
-            ]
-        },
         { //cin
             "type": "cin_block",
             "message0": "cin >> %1",
