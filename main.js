@@ -1,5 +1,7 @@
 var workspace = Blockly.inject('blocklyDiv', {
-    toolbox: `
+    toolbox: document.getElementById('toolbox'),
+    theme: myTheme
+        `
         <xml>
                 <category name="標準函式庫" colour="5">
                     <category name="vector" colour="230">
