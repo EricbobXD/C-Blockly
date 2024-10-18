@@ -6,7 +6,7 @@ class CustomCategory extends Blockly.ToolboxCategory {
       var labelDom = this.rowDiv_.getElementsByClassName('blocklyTreeLabel')[0];
       if (isSelected) {
         // Change the background color of the div to white.
-        this.rowDiv_.style.backgroundColor = 'Black';
+        this.rowDiv_.style.backgroundColor = 'gray';
         // Set the colour of the text to the colour of the category.
         labelDom.style.color = this.colour_;
       } else {
