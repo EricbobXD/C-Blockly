@@ -23,8 +23,6 @@ var workspace = Blockly.inject('blocklyDiv', {
     toolbox: `
         <xml>
                 <category name="標準函式庫" colour="5">
-                    <category name="vector" colour="230">
-                    </category>
                 </category>
                 
                 <category name="主程式框架" colour="0">
