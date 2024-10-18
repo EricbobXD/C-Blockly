@@ -1,3 +1,48 @@
+var myTheme = Blockly.Theme.defineTheme('myTheme', {
+  'base': Blockly.Themes.Classic,  // 基於經典主題
+  'blockStyles': {
+    'logic_blocks': {
+      'colourPrimary': '#FF5722',
+      'colourSecondary': '#FF8A50',
+      'colourTertiary': '#FFAB91'
+    },
+    'loop_blocks': {
+      'colourPrimary': '#1A73E8',
+      'colourSecondary': '#6A95F8',
+      'colourTertiary': '#A0C5FD'
+    }
+  },
+  'categoryStyles': {
+    'logic_category': {
+      'colour': '#FF5722'
+    },
+    'loop_category': {
+      'colour': '#1A73E8'
+    }
+  },
+  'componentStyles': {
+    'workspaceBackgroundColour': '#303030',  // 工作區背景顏色
+    'toolboxBackgroundColour': '#333',
+    'toolboxForegroundColour': '#FFF',
+    'flyoutBackgroundColour': '#424242',
+    'flyoutForegroundColour': '#CCC',
+    'flyoutOpacity': 0.8,
+    'scrollbarColour': '#FF5722',
+    'scrollbarOpacity': 0.7
+  },
+  'fontStyle': {
+    'family': 'Arial, sans-serif',
+    'weight': 'bold',
+    'size': 12
+  },
+  'startHats': true
+});
+
+var workspace = Blockly.inject('blocklyDiv', {
+  toolbox: document.getElementById('toolbox'),
+  theme: myTheme  // 應用自定義主題
+});
+
 var workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
     theme: myTheme
