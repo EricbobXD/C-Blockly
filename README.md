@@ -10,8 +10,7 @@
 2. 設計blockly for c++
 3. 製作上傳下載.xml功能 + 設計更多的Block
 4. 製作上傳下載.cpp功能 + 設計更多的Block
-5. 美化網站並架設網站 + 持續更新
-6. 
+5. 美化網站並架設網站 + 持續設計更多的Block
 ### 目前進度： 製作上傳下載.cpp功能 + 設計更多的Block
 
 ## 參考[C Blockly]"https://hueyanchen.github.io/"
