@@ -15,7 +15,7 @@
             <button class="tablinks" onclick="openTab(event, 'BlankPage')">空白</button>
         </div>
 
-        <div id="main" class="tab-content active">
+        <div id="main" class="tab-content" style="display: block;">
             <div class="workspace-controls-container">
                 <div id="blocklyDiv" class="dialogue-box"></div>
                 <div id="controls">
@@ -28,10 +28,12 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="BlankPage" class="tab-content">
-        <p>a</p>
+        <div id="BlankPage" class="tab-content" style="display: none;">
+            <h2>這是一個空白頁面</h2>
+            <p>你可以在這裡加入任何內容，例如一些說明文字或其他功能：</p>
+            <button class="button" onclick="alert('這是一個按鈕')">點擊這裡</button>
+        </div>
     </div>
 
     <script src="main.js"></script>
